@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Frasco Beauty — WhatsApp 06 32 54 28 94, Instagram @frasco_beauty. 100% original beauty products with delivery all over Morocco.">
+  <title>Contact — Frasco Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo">FR</span>
+        <span class="brand-name"><b>Frasco Beauty</b><span>Original</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" data-cart-open type="button" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="shop.html" class="btn btn-outline btn-block">Shop now</a>
+      <a class="wa" href="https://wa.me/212632542894" target="_blank" rel="noopener">WhatsApp · 06 32 54 28 94</a>
+    </div>
+  </aside>
+
+  <!-- ================= OVERLAY + CART ================= -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+        Your Cart (<span id="cartCountLabel">0</span>)
+      </h3>
+      <button class="cart-close" data-cart-close type="button" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot" id="cartFoot">
+      <div class="cart-total"><span>TOTAL</span><b id="cartTotal">0 DH</b></div>
+      <button class="btn btn-whatsapp btn-block" data-order-wa type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Order via WhatsApp
+      </button>
+      <p class="cart-note">Authentic products · Delivery available all over Morocco</p>
+    </div>
+  </aside>
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">Home / Contact</div>
+      <h1>Get in <span class="gold-text">Touch</span></h1>
+      <div class="divider"></div>
+      <p>Questions, orders or product requests — we'd love to hear from you. Reach us instantly on WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" style="padding-top:12px">
+    <div class="container contact-grid">
+
+      <!-- Form -->
+      <div class="contact-card" data-reveal="left">
+        <h2 style="font-size:1.6rem;color:#fff;margin-bottom:6px">Send us a message</h2>
+        <p style="color:var(--muted);font-size:0.9rem;margin-bottom:20px">We usually reply within a few hours.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="cname">Full name</label>
+            <input type="text" id="cname" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="cphone">Phone / WhatsApp</label>
+            <input type="tel" id="cphone" name="phone" placeholder="06 00 00 00 00" required>
+          </div>
+          <div class="field">
+            <label for="csubject">Subject</label>
+            <select id="csubject" name="subject">
+              <option>Product enquiry</option>
+              <option>Place an order</option>
+              <option>Delivery question</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" name="message" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Send message</button>
+          <p class="form-note" id="formNote">✓ Thank you! Your message has been received. We'll get back to you shortly.</p>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="info-list" data-reveal="right">
+        <a class="info-item" href="https://wa.me/212632542894" target="_blank" rel="noopener">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          </span>
+          <span>
+            <b>WhatsApp</b>
+            <span>06 32 54 28 94 · tap to chat</span>
+          </span>
+        </a>
+
+        <a class="info-item" href="https://instagram.com/frasco_beauty" target="_blank" rel="noopener">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span>
+            <b>Instagram</b>
+            <span>@frasco_beauty · 118K+ community</span>
+          </span>
+        </a>
+
+        <div class="info-item">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+          </span>
+          <span>
+            <b>Delivery</b>
+            <span>Available all over Morocco</span>
+          </span>
+        </div>
+
+        <div class="info-item">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.4-7-11a7 7 0 0 1 14 0c0 4.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </span>
+          <span>
+            <b>Based in Morocco</b>
+            <span>Shipping nationwide, every day</span>
+          </span>
+        </div>
+
+        <div style="margin-top:6px">
+          <h4 style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Follow us</h4>
+          <div class="socials">
+            <a class="social-link" href="https://instagram.com/frasco_beauty" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="social-link" href="https://wa.me/212632542894" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Map -->
+    <div class="container" style="margin-top:34px" data-reveal="zoom">
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Casablanca,Morocco&output=embed"
+          width="600" height="320" style="border:0"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Frasco Beauty location in Morocco"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-logo">FR</span>
+            <span class="brand-name"><b>Frasco Beauty</b><span>Original</span></span>
+          </a>
+          <p>A premium beauty &amp; wellness boutique in Morocco — 100% original perfumes, skincare, body, hair and dental care, delivered nationwide.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop all</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <div class="footer-links">
+            <a href="https://wa.me/212632542894" target="_blank" rel="noopener">WhatsApp · 06 32 54 28 94</a>
+            <a href="https://instagram.com/frasco_beauty" target="_blank" rel="noopener">Instagram · @frasco_beauty</a>
+            <a href="contact.html">Delivery all over Morocco</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Frasco Beauty. All rights reserved.</span>
+        <span>Beauté &amp; Bien-être — <span class="gold-text">100% produits originaux</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/212632542894" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

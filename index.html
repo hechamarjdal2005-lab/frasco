@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frasco Beauty — premium beauty & wellness boutique in Morocco. 100% original perfumes, skin, body, hair and dental care. Delivery all over Morocco.">
+  <title>Frasco Beauty — 100% Original Beauty & Perfume Boutique in Morocco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo">FR</span>
+        <span class="brand-name"><b>Frasco Beauty</b><span>Original</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" data-cart-open type="button" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="shop.html" class="btn btn-outline btn-block">Shop now</a>
+      <a class="wa" href="https://wa.me/212632542894" target="_blank" rel="noopener">WhatsApp · 06 32 54 28 94</a>
+    </div>
+  </aside>
+
+  <!-- ================= OVERLAY + CART ================= -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+        Your Cart (<span id="cartCountLabel">0</span>)
+      </h3>
+      <button class="cart-close" data-cart-close type="button" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-foot" id="cartFoot">
+      <div class="cart-total">
+        <span>TOTAL</span>
+        <b id="cartTotal">0 DH</b>
+      </div>
+      <button class="btn btn-whatsapp btn-block" data-order-wa type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Order via WhatsApp
+      </button>
+      <p class="cart-note">Authentic products · Delivery available all over Morocco</p>
+    </div>
+  </aside>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <span class="hero-badge"><span class="dot"></span> Trusted by 118K+ followers</span>
+        <h1>Frasco <span class="gold-text">Beauty</span><em>Beauté &amp; Bien-être</em></h1>
+        <p class="hero-tagline">Morocco's premium destination for perfumes and beauty essentials — <strong>100% produits originaux</strong>, curated with care and delivered to your door.</p>
+
+        <div class="hero-cta">
+          <a href="shop.html" class="btn">Explore the shop</a>
+          <a href="#featured" class="btn btn-outline">View promos</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><b>118K+</b><span>Followers</span></div>
+          <div class="stat"><b>100%</b><span>Original</span></div>
+          <div class="stat"><b>48H</b><span>Delivery</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="bottle-stage">
+          <div class="bottle-halo"></div>
+          <div class="bottle-ring"></div>
+          <div class="bottle">
+            <span class="cap"></span>
+            <span class="neck"></span>
+            <div class="body"><span class="label">FR</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TRUST TICKER ================= -->
+  <div class="ticker" aria-label="Trust guarantees">
+    <div class="ticker-track">
+      <span>100% authentic products</span>
+      <span>Delivery all over Morocco</span>
+      <span>Trusted by 118K+ followers</span>
+      <span>Genuine luxury brands</span>
+      <span>100% authentic products</span>
+      <span>Delivery all over Morocco</span>
+      <span>Trusted by 118K+ followers</span>
+      <span>Genuine luxury brands</span>
+    </div>
+  </div>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Curated for you</span>
+        <h2>Our Categories</h2>
+        <div class="divider"></div>
+        <p>From iconic perfumes to everyday essentials — every product is genuine and hand-picked.</p>
+      </div>
+
+      <div class="cat-grid stagger" data-reveal>
+
+        <a href="shop.html" class="cat-card" data-reveal style="--i:0">
+          <span class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6v3l1.5 2.3A5 5 0 0 1 17 11v6a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-6a5 5 0 0 1 .5-2.2L9 6z"/><path d="M9 13h6"/></svg>
+          </span>
+          <h3>Perfumes</h3>
+          <small>Bvlgari &amp; more</small>
+        </a>
+
+        <a href="shop.html" class="cat-card" data-reveal style="--i:1">
+          <span class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3s5 5.5 5 10a5 5 0 0 1-10 0c0-4.5 5-10 5-10z"/></svg>
+          </span>
+          <h3>Skin Care</h3>
+          <small>Glow &amp; hydration</small>
+        </a>
+
+        <a href="shop.html" class="cat-card" data-reveal style="--i:2">
+          <span class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a4 4 0 0 0-4 4v10a4 4 0 0 0 8 0V7a4 4 0 0 0-4-4z"/><path d="M8 11h8M8 14h8"/></svg>
+          </span>
+          <h3>Body Care</h3>
+          <small>Nourish &amp; silk</small>
+        </a>
+
+        <a href="shop.html" class="cat-card" data-reveal style="--i:3">
+          <span class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-2 3-5 4-5 8a5 5 0 0 0 10 0c0-4-3-5-5-8z"/><path d="M12 21v-6"/></svg>
+          </span>
+          <h3>Hair Care</h3>
+          <small>Argan &amp; repair</small>
+        </a>
+
+        <a href="shop.html" class="cat-card" data-reveal style="--i:4">
+          <span class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h4v5c3 1 4 3 4 6a5 5 0 0 1-5 5H9a3 3 0 0 1-3-3V6a3 3 0 0 1 2-3z"/><path d="M12 8v13"/></svg>
+          </span>
+          <h3>Dental Care</h3>
+          <small>Fresh &amp; bright</small>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED / PROMO ================= -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Bestsellers &amp; deals</span>
+        <h2>Featured <span class="gold-text">Promotions</span></h2>
+        <div class="divider"></div>
+        <p>Hand-picked bestsellers and limited-time promo prices — 100% original, always.</p>
+      </div>
+
+      <div class="product-grid" id="featuredGrid"></div>
+
+      <div style="text-align:center;margin-top:36px" data-reveal>
+        <a href="shop.html" class="btn btn-outline">See all products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Why Frasco Beauty</span>
+        <h2>A Boutique You Can Trust</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="why-grid stagger" data-reveal>
+
+        <div class="why-card" data-reveal style="--i:0">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>100% Original</h3>
+          <p>Every product is guaranteed authentic and sourced from trusted suppliers.</p>
+        </div>
+
+        <div class="why-card" data-reveal style="--i:1">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+          </span>
+          <h3>Nationwide Delivery</h3>
+          <p>Fast, reliable shipping to every city and town across Morocco.</p>
+        </div>
+
+        <div class="why-card" data-reveal style="--i:2">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M17 11a2.5 2.5 0 0 0 0-5M21 20a5 5 0 0 0-4-4.9"/></svg>
+          </span>
+          <h3>118K+ Community</h3>
+          <p>Loved and trusted by one of Morocco's most engaged beauty communities.</p>
+        </div>
+
+        <div class="why-card" data-reveal style="--i:3">
+          <span class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.4 5.4 5.6.5-4.3 3.8 1.3 5.6L12 15.8 7 18.3l1.3-5.6L4 8.9l5.6-.5z"/></svg>
+          </span>
+          <h3>Premium Curated</h3>
+          <p>A refined selection of luxury and niche brands, chosen with expertise.</p>
+        </div>
+
+      </div>
+
+      <!-- animated counters -->
+      <div class="stats-band" data-reveal>
+        <div class="stat-item">
+          <b data-count="118" data-suffix="K+">0</b>
+          <span>Instagram Followers</span>
+        </div>
+        <div class="stat-item">
+          <b data-count="25" data-suffix="K+">0</b>
+          <span>Orders Delivered</span>
+        </div>
+        <div class="stat-item">
+          <b data-count="100" data-suffix="%">0</b>
+          <span>Original Products</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-logo">FR</span>
+            <span class="brand-name"><b>Frasco Beauty</b><span>Original</span></span>
+          </a>
+          <p>A premium beauty &amp; wellness boutique in Morocco — 100% original perfumes, skincare, body, hair and dental care, delivered nationwide.</p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop all</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Get in touch</h4>
+          <div class="footer-links">
+            <a href="https://wa.me/212632542894" target="_blank" rel="noopener">WhatsApp · 06 32 54 28 94</a>
+            <a href="https://instagram.com/frasco_beauty" target="_blank" rel="noopener">Instagram · @frasco_beauty</a>
+            <a href="contact.html">Delivery all over Morocco</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Frasco Beauty. All rights reserved.</span>
+        <span>Beauté &amp; Bien-être — <span class="gold-text">100% produits originaux</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="float-wa" href="https://wa.me/212632542894" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

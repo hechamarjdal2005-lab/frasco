@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The story of Frasco Beauty — a trusted beauty & wellness destination in Morocco committed to 100% authentic products and premium care.">
+  <title>About — Frasco Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo">FR</span>
+        <span class="brand-name"><b>Frasco Beauty</b><span>Original</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" data-cart-open type="button" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="shop.html" class="btn btn-outline btn-block">Shop now</a>
+      <a class="wa" href="https://wa.me/212632542894" target="_blank" rel="noopener">WhatsApp · 06 32 54 28 94</a>
+    </div>
+  </aside>
+
+  <!-- ================= OVERLAY + CART ================= -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+        Your Cart (<span id="cartCountLabel">0</span>)
+      </h3>
+      <button class="cart-close" data-cart-close type="button" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot" id="cartFoot">
+      <div class="cart-total"><span>TOTAL</span><b id="cartTotal">0 DH</b></div>
+      <button class="btn btn-whatsapp btn-block" data-order-wa type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Order via WhatsApp
+      </button>
+      <p class="cart-note">Authentic products · Delivery available all over Morocco</p>
+    </div>
+  </aside>
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">Home / About</div>
+      <h1>Our <span class="gold-text">Story</span></h1>
+      <div class="divider"></div>
+      <p>A trusted beauty &amp; wellness destination in Morocco, built on one simple promise: 100% original products.</p>
+    </div>
+  </section>
+
+  <!-- ================= STORY ================= -->
+  <section class="section" style="padding-top:12px">
+    <div class="container about-grid">
+
+      <div class="about-copy" data-reveal="left">
+        <span class="eyebrow">Who we are</span>
+        <h2>Beauté &amp; Bien-être, <span class="gold-text">done right</span></h2>
+        <p>Frasco Beauty began with a frustration every beauty lover in Morocco knows too well — finding authentic products at fair prices, without the worry of fakes. We set out to change that.</p>
+        <p>Today we are a premium boutique delivering across the whole country. From iconic luxury perfumes like <strong>Bvlgari</strong> to carefully selected skin, body, hair and dental care, every item is verified genuine and sourced from trusted partners.</p>
+        <p>Our community of more than <strong>118,000 followers</strong> trusts us daily for curated picks, honest advice and real deals. That trust is the most valuable thing we own — and we protect it with every single order.</p>
+        <a href="shop.html" class="btn" style="margin-top:10px">Discover the collection</a>
+      </div>
+
+      <div class="about-gallery" data-reveal="right">
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=80" alt="Luxury perfume bottles at Frasco Beauty">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=700&q=80" alt="Skincare products on display">
+        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=80" alt="Signature fragrance collection">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= VALUES ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">What guides us</span>
+        <h2>Our Values</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="value-grid stagger" data-reveal>
+        <div class="value-card" data-reveal style="--i:0">
+          <div class="num">01</div>
+          <h3>Authenticity</h3>
+          <p>100% original products only — never fakes, never compromises.</p>
+        </div>
+        <div class="value-card" data-reveal style="--i:1">
+          <div class="num">02</div>
+          <h3>Quality</h3>
+          <p>A premium, curated selection chosen with genuine expertise.</p>
+        </div>
+        <div class="value-card" data-reveal style="--i:2">
+          <div class="num">03</div>
+          <h3>Trust</h3>
+          <p>Transparent prices, real deals and a community that keeps growing.</p>
+        </div>
+        <div class="value-card" data-reveal style="--i:3">
+          <div class="num">04</div>
+          <h3>Premium Care</h3>
+          <p>Fast, nationwide delivery and attentive support from order to door.</p>
+        </div>
+      </div>
+
+      <div class="stats-band" data-reveal>
+        <div class="stat-item">
+          <b data-count="118" data-suffix="K+">0</b>
+          <span>Instagram Followers</span>
+        </div>
+        <div class="stat-item">
+          <b data-count="25" data-suffix="K+">0</b>
+          <span>Orders Delivered</span>
+        </div>
+        <div class="stat-item">
+          <b data-count="100" data-suffix="%">0</b>
+          <span>Original Products</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-logo">FR</span>
+            <span class="brand-name"><b>Frasco Beauty</b><span>Original</span></span>
+          </a>
+          <p>A premium beauty &amp; wellness boutique in Morocco — 100% original perfumes, skincare, body, hair and dental care, delivered nationwide.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop all</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <div class="footer-links">
+            <a href="https://wa.me/212632542894" target="_blank" rel="noopener">WhatsApp · 06 32 54 28 94</a>
+            <a href="https://instagram.com/frasco_beauty" target="_blank" rel="noopener">Instagram · @frasco_beauty</a>
+            <a href="contact.html">Delivery all over Morocco</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Frasco Beauty. All rights reserved.</span>
+        <span>Beauté &amp; Bien-être — <span class="gold-text">100% produits originaux</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/212632542894" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
